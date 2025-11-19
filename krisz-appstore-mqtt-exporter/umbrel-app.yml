@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: mqtt-exporter
+id: krisz-appstore-mqtt-exporter
 name: MQTT Exporter
 tagline: mqtt
 icon: https://images.seeklogo.com/logo-png/39/1/mqtt-logo-png_seeklogo-399397.png
