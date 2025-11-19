@@ -9,7 +9,7 @@ services:
   mqtt-exporter:
     image: kpetrem/mqtt-exporter
     environment:
-      MQTT_ADDRESS: 192.168.88.223
+      MQTT_ADDRESS: "192.168.88.223"
       MQTT_PORT: 1883
       MQTT_USERNAME: 
       MQTT_PASSWORD: 
