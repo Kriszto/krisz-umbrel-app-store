@@ -4,7 +4,7 @@ name: MQTT Exporter
 tagline: Export MQTT data into Prometheus / Grafana
 icon: https://images.seeklogo.com/logo-png/39/1/mqtt-logo-png_seeklogo-399397.png
 category: development
-version: "1.0.0"
+version: "1.0.1"
 port: 9000
 
 # EZ KELL HOZZÁ, különben nincs UI:
