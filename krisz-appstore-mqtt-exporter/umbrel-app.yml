@@ -28,30 +28,3 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-
-settings:
-  - id: mqtt_host
-    name: MQTT Host
-    description: IP or hostname of the MQTT broker
-    type: text
-    default: "192.168.0.1"
-
-  - id: mqtt_port
-    name: MQTT Port
-    type: number
-    default: 1883
-
-  - id: mqtt_username
-    name: Username
-    type: text
-    default: ""
-
-  - id: mqtt_password
-    name: Password
-    type: password
-    default: ""
-
-  - id: mqtt_topic
-    name: Topic filter
-    type: text
-    default: "#"
