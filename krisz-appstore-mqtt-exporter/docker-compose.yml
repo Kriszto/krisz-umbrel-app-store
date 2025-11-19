@@ -1,11 +1,17 @@
 version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: krisz-appstore-mqtt-exporter_mqtt-exporter_1
+      APP_PORT: 9000
+
   mqtt-exporter:
     image: kpetrem/mqtt-exporter
-    ports:
-      - 9000:9000
     environment:
-      - MQTT_ADDRESS=${APP_SETTING_MQTT_HOST}
-      - MQTT_TOPIC=${APP_SETTING_MQTT_TOPIC}
+      MQTT_ADDRESS: ${APP_SETTING_MQTT_HOST}
+      MQTT_PORT: ${APP_SETTING_MQTT_PORT}
+      MQTT_USERNAME: ${APP_SETTING_MQTT_USERNAME}
+      MQTT_PASSWORD: ${APP_SETTING_MQTT_PASSWORD}
+      MQTT_TOPIC: ${APP_SETTING_MQTT_TOPIC}
     restart: unless-stopped
