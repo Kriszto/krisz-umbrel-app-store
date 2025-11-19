@@ -6,6 +6,6 @@ services:
     ports:
       - 9000:9000
     environment:
-      - MQTT_ADDRESS=192.168.88.223
-      - MQTT_TOPIC=#
+      - MQTT_ADDRESS=${APP_SETTING_MQTT_HOST}
+      - MQTT_TOPIC=${APP_SETTING_MQTT_TOPIC}
     restart: unless-stopped

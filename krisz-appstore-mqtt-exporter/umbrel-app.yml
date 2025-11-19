@@ -23,3 +23,15 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+settings:
+  - id: mqtt_host
+    name: MQTT Broker Host
+    description: IP or hostname
+    type: text
+    default: "192.168.x.x"
+
+  - id: mqtt_topic
+    name: MQTT Topic
+    description: Topic to subscribe to
+    type: text
+    default: "#"
