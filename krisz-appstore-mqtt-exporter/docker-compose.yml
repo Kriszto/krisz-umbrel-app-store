@@ -9,7 +9,7 @@ services:
   mqtt-exporter:
     image: kpetrem/mqtt-exporter
     ports:
-      - "9000:9000"
+      - "9001:9000"
     environment:
       - MQTT_ADDRESS=192.168.88.223
       - MQTT_TOPIC=#
