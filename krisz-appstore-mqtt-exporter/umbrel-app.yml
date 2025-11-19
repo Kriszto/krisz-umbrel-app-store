@@ -1,15 +1,20 @@
 manifestVersion: 1
 id: krisz-appstore-mqtt-exporter
 name: MQTT Exporter
-tagline: mqtt
+tagline: Export MQTT data into Prometheus / Grafana
 icon: https://images.seeklogo.com/logo-png/39/1/mqtt-logo-png_seeklogo-399397.png
-category: Development
+category: development
 version: "1.0.0"
 port: 9000
-description: >-
-  MQTT Exporter
 
-developer: Umbrel
+# EZ KELL HOZZÁ, különben nincs UI:
+ui: true
+privacy: public
+
+description: >-
+  This app connects to an MQTT broker and exposes metrics for Prometheus/Grafana.
+
+developer: Krisz
 website: https://github.com/kpetremann/mqtt-exporter
 submitter: Krisz
 submission: https://github.com/kpetremann/mqtt-exporter
@@ -18,7 +23,7 @@ support: https://github.com/kpetremann/mqtt-exporter/issues
 gallery:
   - https://images.seeklogo.com/logo-png/39/1/mqtt-logo-png_seeklogo-399397.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Initial MQTT Exporter Umbrel app.
 dependencies: []
 path: ""
 defaultUsername: ""
@@ -27,30 +32,26 @@ defaultPassword: ""
 settings:
   - id: mqtt_host
     name: MQTT Host
-    description: Hostname or IP of your MQTT broker
+    description: IP or hostname of the MQTT broker
     type: text
-    default: 192.168.0.1
+    default: "192.168.0.1"
 
   - id: mqtt_port
     name: MQTT Port
-    description: TCP port of the MQTT broker
     type: number
     default: 1883
 
   - id: mqtt_username
     name: Username
-    description: Optional username
     type: text
     default: ""
 
   - id: mqtt_password
     name: Password
-    description: Optional password
     type: password
     default: ""
 
   - id: mqtt_topic
     name: Topic filter
-    description: MQTT topic filter to subscribe to
     type: text
     default: "#"
